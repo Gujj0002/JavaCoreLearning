@@ -1,6 +1,8 @@
 package com.company;
 
 public class string {
+
+    /* using of == and .equals*/
     public static void main(String[] args) {
         String s1 = "Alpesh";
         String s2 = "Alpesh";
