@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class ArrayInJava {
     public static void main(String[] args) {
@@ -16,7 +17,6 @@ public class ArrayInJava {
         System.out.println(listA[3]);
 
         /* Array table */
-
         int A[] = {1, 3, 6, 8, 9, 4};
 
         System.out.println("Index\tvalue");
@@ -27,7 +27,6 @@ public class ArrayInJava {
         }
 
         /*  Sum of Array  */
-
         int B[] = {12, 34, 45, 56, 67, 54};
         int sum = 0;
 
@@ -36,5 +35,23 @@ public class ArrayInJava {
         }
         System.out.println("The sum of Array is " + sum);
 
+
+        /* Array counter..with random number */
+        Random random = new Random();
+        int counter[] = new int[15];
+
+        for (int i = 0; i < counter.length; i++) {
+
+            ++counter[1 + random.nextInt(15)];
+        }
+        System.out.println("number\ttimes");
+
+        for (int j = 0; j < counter.length; j++) {
+            System.out.println(j + " " + counter[j]);
+        }
     }
+
 }
+
+
+

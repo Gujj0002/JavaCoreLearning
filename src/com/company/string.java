@@ -12,5 +12,6 @@ public class string {
         String s4 = new String("Alpesh");
         System.out.println( s3 == s4);
         System.out.println(s3.equals(s4));
+
     }
 }

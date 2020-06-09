@@ -23,5 +23,15 @@ public class LoopsInJava {
         for (int k = 0; k <= 20; k++) {
             System.out.println(k);
         }
+
+        /* Enhanced for loop....*/
+        int B[] = {12, 34, 45, 56, 67, 54};
+        int sum = 0;
+
+        for (int x : B) {
+            sum = sum + x;
+        }
+        System.out.println("The sum of Array is " + sum);
     }
+
 }
